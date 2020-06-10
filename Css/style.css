@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Bree+Serif&display=swap');
+/*css reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root{
+    --navbar-height :59px;
+}
+
+/* Navigation bar */
+#nav-bar{
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Thambi 2', cursive;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#nav-bar::before{
+    content: "";
+    background-color: black;
+    height: 25%;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -2;
+}
+/* Navigation Bar-logo and img */
+.logo img{
+    width: 81px;
+    margin: 8px 5px;
+    height: 70px;
+}
+.logo{
+    margin: 8px -1px;
+}
+
+#nav-bar ul{
+    display: flex;
+    margin: 27px 35px;
+}
+.items{
+    list-style: none;
+    text-decoration: none;
+    margin: 2px 5px;
+}
+#nav-bar ul li a{
+    padding:12px 23px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+#nav-bar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+    background-color:white;
+
+}
+/* Section Style */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    align-items: center;
+    justify-content: center;
+    height:650px;
+    top: 0px;
+    left: 0px;
+
+}
+#home::before{
+    content: "";
+    background: url(../images/img1.jpg) no-repeat center center/cover;
+    height:93%;
+    width: 100%;
+    opacity: 0.99;
+    position: absolute;
+    z-index: -1;   
+}
+#home h1{
+    color: white;
+    text-align: center;
+    word-spacing: 12px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+
+
+#services{
+    display: flex;
+    margin: 0px 14px;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 11px 6px;
+    padding: 16px 29px;
+    border-radius: 32px;
+    background-color: gainsboro
+}
+#services .box img{
+    height: 173px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;;   
+}
+/* Clients Section */
+
+#client-section{
+  height: 344px;
+}
+#client-section::before{
+    content: " ";
+    background:url('../images/img2.jpg') no-repeat center center/cover;
+    height: 49%;
+    width: 100%;
+    opacity: 0.7;
+   position: absolute;
+   z-index: -1;
+  }
+.client-items{
+    padding: 34px;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+}
+.clients img{
+     height:102px ;
+}
+/* contact form */
+#contact{
+    position: relative;
+    height: 500px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background: url(../images/img3.webp)no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    border-radius: 16px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+/* utilities class */
+.h-primary{
+    font-size: 3.0rem;
+    padding: 30px 25px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding:9px 25px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 10px 38px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 29px;
+    margin: 19px 5px;
+    color: black;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    background-color: khaki;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
